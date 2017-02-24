@@ -1,4 +1,4 @@
-# PerlGibberDetector
+# Perl Gibberish Detector
 I wrote this program after seeing similar projects done in PHP and Python... Originally, the idea comes from a question on stackoverflow (http://stackoverflow.com/questions/6297991/is-there-any-way-to-detect-strings-like-putjbtghguhjjjanika/6298040#comment-7360747).
 
 #Usage
