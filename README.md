@@ -2,6 +2,7 @@
 I wrote this program after seeing similar projects done in PHP and Python... Originally, the idea comes from a question on stackoverflow (http://stackoverflow.com/questions/6297991/is-there-any-way-to-detect-strings-like-putjbtghguhjjjanika/6298040#comment-7360747).
 
 #Usage
+
 First train the model:
 
 perl gib_detect_train.pl
@@ -27,6 +28,7 @@ seems okay True
 yay! True
 
 #How it works
+
 Credits to rrenaud for the explanation.
 
 The markov chain first 'trains' or 'studies' a few MB of English text, recording how often characters appear next to each other. Eg, given the text "Rob likes hacking" it sees Ro, ob, o[space], [space]l, ... It just counts these pairs. After it has finished reading through the training data, it normalizes the counts. Then each character has a probability distribution of 27 followup character (26 letters + space) following the given initial.
